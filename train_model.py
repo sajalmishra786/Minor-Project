@@ -194,3 +194,9 @@ print("Model loaded successfully!")
 if 'X_test' in locals():
     sample_data = X_test.iloc[[0]]
     print("Example prediction:", loaded_model.predict(sample_data))
+
+if __name__ == '__main__':
+    # Place everything you currently have inside this block.
+    # Example:
+    print("Training and exporting model...")
+
