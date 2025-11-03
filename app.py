@@ -13,7 +13,7 @@ valid_features = [
 ]
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/')
 def home():
